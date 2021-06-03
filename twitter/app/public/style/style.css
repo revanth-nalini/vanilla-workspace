@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F0F11;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.navigation{
+    width: 20%;
+    max-width: 100px;
+    min-width: 70px;
+    /* border: 1px solid #1C1C1C; */
+    position: fixed;
+}
+
+.navigation .navigation-container{
+    color: white;
+    margin-top: 30px;
+}
+
+.navigation .navigation-container .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.navigation .navigation-container .logo i{
+    font-size: 30px;
+}
+
+.navigation .navigation-container .home{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;
+    border-right: 2px solid #00ADFF;
+}
+
+.navigation .navigation-container .home i{ 
+    font-size: 24px;
+    color: #00ADFF;
+}
+
+.navigation .navigation-container .profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation .navigation-container .profile-container{
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #979797;
+    height: 30px;
+    width: 30px;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main-container{
+    width: 50%;
+}
+
+.main .search{
+    /* height: 70px; */
+    margin: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+}
+
+.main .search input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main .search input:focus{
+    outline: none;
+}
+
+.main .search i{
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.main .list{
+    flex-grow: 1;
+}
+
+.main .list .welcome{
+    color: white;
+}
+
+.main .list .welcome h5{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.main .list .welcome p{
+    text-align: center;
+}
+
+.main .tweet{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 0px 10px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main .tweet .user-info{
+    margin: 10px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main .tweet .user-info .user-profile{
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #979797;
+    background-position: center;
+    background-size: cover;
+}
+
+.main .tweet .user-info .user-name{
+    color: white;
+    margin-left: 10px;
+}
+
+.main .tweet .user-info .user-fullname{
+    font-size: 14px;
+}
+
+.main .tweet .user-info .user-username{
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+.main .tweet .tweet-img, .main .tweet .tweet-vid{
+    margin: 20px;
+    margin-bottom: 0px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #1C1C1C;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.main .tweet .tweet-vid video{
+    width: 100%;
+    height: 100%;
+}
+
+.main .tweet .tweet-img .tweet-pic{
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+}
+
+.main .tweet .tweet-text{
+    margin: 20px 20px 0px 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255,  0.75);
+}
+
+.main .tweet .tweet-date{
+    margin: 10px 20px;
+    color:  #47525D;
+    font-size: 10px;
+}
+
+.main .next-page{
+    margin: 0px 20px 20px 20px;
+    color: #47525D;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    visibility: hidden;
+}  
+
+.main .next-page:hover{
+    background-color: #1C1C1C;
+}
+
+.trending{
+    /* flex-grow: 1; */
+    flex: 0.3;
+    /* display: flex; */
+}
+
+.trending .tags{
+    position: fixed;
+    margin: 30px 20px 0px 20px;
+    /* height: 400px; */
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid #979797;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border-radius: 35px;
+}
+
+.trending .tags .hash-tags{
+    height: 300px;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 35px;
+}
+
+.trending .tags h5{
+    font-size: 16px;
+    color: #848586;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.trending .tags ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.trending .tags ul li{
+    color: #A5A5A6;
+    font-size: 18px;
+    border-top: 0.5px solid #979797;
+    padding: 6px 0px 6px 0px;
+    padding-left: 24px;
+    cursor: pointer;
+}

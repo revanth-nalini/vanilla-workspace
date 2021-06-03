@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/870/870910.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="session.js"></script>
+    <style></style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+        <div class="profile">
+            <img src="assets/profile.png" alt="">
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <span onclick="logOut()">Sign Out</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="featured">
+            <h2 id="featured-title"></h2>
+            <div class="featured-btn">
+                <button class="btn-play"><i class="fas fa-play"></i>Play</button>
+                <button>My List</button>
+            </div>
+            <div class="featured-desc"></div>
+        </div>
+        <div class="originals">
+            <div class="originals-header">
+                <h2>NETFLIX ORIGINALS</h2>
+            </div>
+            <div class="originals-list"></div>
+        </div>
+        <div class="movies">
+            <!-- <div class="movies-header">
+                <h2>WishList</h2>
+            </div>
+            <div class="movies-list" id="wishlist"></div> -->
+            <div class="movies-header">
+                <h2>Trending Now</h2>
+            </div>
+            <div class="movies-list" id="trending"></div>
+            <div class="movies-header">
+                <h2>Top Rated</h2>
+            </div>
+            <div class="movies-list" id="top_rated"></div>
+        </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="trailerModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <span class="movieNotFound">Trailer Not Found</span>
+                <iframe id="movieTrailer" height="400" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
